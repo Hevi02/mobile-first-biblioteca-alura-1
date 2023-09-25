@@ -1,44 +1,38 @@
-.cabeçalho_menu-hamburguer {
+.cabeçalho_menu-hamburguer{
     width: 70px;
     height: 70px;
-    background-image: url(../IMAGEM/Menu.svg);
+    background-image: url(../imagens/Logo.svg.png);
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
 }
-.cabeçalho {
+.cabeçalho{
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-
-.div-1 {
+.div-1{
     display: flex;
     align-items: center;
 }
-
-h1 {
+h1{
     display: none;
 }
-
-.lista-menu {
+.lista-menu{
     display: block;
     position: absolute;
     top: 100%;
 }
-
 .lista-menu_titulo,.lista-menu_item{
     padding: 1em;
     background-color: var(--branco);
 }
-
 .lista-menu_titulo{
     color: var(--amarelo);
-    font-weight: 700;
+    font-weight: 700px;
 }
-
 .lista-menu_link{
     background: var(--roxo);
     -webkit-background-clip: text;
@@ -49,18 +43,15 @@ h1 {
 .div-menu{
     display: none;
 }
-
 @media screen and (min-width:1024px) {
-    h1 {
+    h1{
         font-size: 30px;
         display: block;
     }
 }
-
 .lista-menu{
     display: none;
 }
-
-.div-menu:checked ~ .lista-menu {
+.div-menu:checked ~ .lista-menu{
     display: block;
 }
